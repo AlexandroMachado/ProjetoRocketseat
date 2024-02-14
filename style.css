@@ -1,0 +1,91 @@
+/* -- regras do item MARGIN funcionam como o ponteiro do relógio no sentido horário
+      primeiro margin-top, 
+      segundo margin-right, 
+      terceiro margin-bottom, 
+      quarto margin-left.
+*/
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+h1 span {
+  font-weight: bold;
+}
+
+body {
+  margin-top: 0px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+span,
+a {
+  color: #ff9900;
+}
+
+p {
+  color: #707987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+body {
+  /*
+  background-image: url("./Assets/bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  */
+  background: url("./Assets/bg-mobile.jpg") no-repeat top center/cover;
+}
+/* quando tiver # na frente do nome 
+esse seletor tem um id no html e tem prioridade
+na ordem da apresentação do css
+*/
+#container {
+  width: 360px;
+  height: 712px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+#profile {
+  text-align: center;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#hero {
+  width: 592px;
+  margin: 0 auto 72px;
+}
+
+#hero img {
+  margin-bottom: 72px;
+}
+/* regra -> pegue o id "#footer" que contenha um "a" que 
+            tenha um "a" anterior e aplique a regra css. */
+#footer a + a {
+  margin-left: 28px;
+}
+
+/* # => usado com o id no index, não pode se repetir dentro do codigo
+   . => usado com o class no index, pode repetir e usar em qualquer lugar, pode usar concatenado com o id. ex: id="footer" class="line"
+*/
+#footer .line {
+  width: 568px; /*largura da linha*/
+  height: 0; /* Altura da linha*/
+  border: 1px solid #eceff2;
+  margin: 0 auto 8px; /*magem cima 0, laterais auto, baixo 8px*/
+}
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
